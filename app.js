@@ -10,7 +10,7 @@ const i18n = {
     heroTitle: "PPN Travels Pudukkottai",
     heroSubtitle: "Safe, Comfortable & Premium Travels! Rent Toyota Innova Crysta, Etios, Swift Dzire, Tempo Traveller & Tourist Vans at the best prices.",
     btnBookNow: "Book Now",
-    btnCallUs: "Call: 98765 43210",
+    btnCallUs: "Call: 86678 88566",
     featSanitised: "Sanitized Vehicles",
     featExperienced: "Polite & Expert Drivers",
     featOnTime: "100% On-Time Service",
@@ -83,7 +83,7 @@ const i18n = {
     heroTitle: "பிபிஎன் டிராவல்ஸ் புதுக்கோட்டை",
     heroSubtitle: "பாதுகாப்பான மற்றும் சொகுசான பயணம்! இன்னோவா கார், எட்டியோஸ், டெம்போ டிராவலர் மற்றும் வேன்கள் மிகக் குறைந்த வாடகையில்.",
     btnBookNow: "உடனே புக் செய்ய",
-    btnCallUs: "அழைக்க: 98765 43210",
+    btnCallUs: "அழைக்க: 86678 88566",
     featSanitised: "சுத்தமான வாகனங்கள்",
     featExperienced: "அனுபவமிக்க டிரைவர்கள்",
     featOnTime: "100% சரியான நேர சேவை",
@@ -327,7 +327,7 @@ function calculateFare() {
   document.getElementById('res-total-fare').innerText = `₹${totalFare.toLocaleString('en-IN')}`;
 }
 
-// WhatsApp Booking Message Generator
+// WhatsApp Booking Message Generator with User's real phone number 8667888566
 function bookOnWhatsapp() {
   const vehicleId = document.getElementById('calc-vehicle').value;
   const distance = document.getElementById('calc-distance').value;
@@ -347,13 +347,13 @@ function bookOnWhatsapp() {
 
 Please confirm vehicle availability. Thank you!`;
 
-  const phone = '919876543210';
+  const phone = '918667888566';
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
 }
 
 function quickBookVehicle(vehicleName) {
   const text = `Hello *PPN Travels Pudukkottai*, I want to book *${vehicleName}*. Please share available dates and driver details.`;
-  const phone = '919876543210';
+  const phone = '918667888566';
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
 }
 
